@@ -1,6 +1,6 @@
 variables:
-  ml-ws-connection: 'truid' # Workspace Service Connection name
-  ml-ws: 'truid' # AML Workspace name
+  ml-ws-connection: 'aml-demo' # Workspace Service Connection name
+  ml-ws: 'aml-demo' # AML Workspace name
   ml-rg: 'ml-scratch-env' # AML resource Group name
   ml-ct: 'truid-compute' # AML Compute cluster name
   ml-path: 'models/diabetes' # Model directory path in repo
