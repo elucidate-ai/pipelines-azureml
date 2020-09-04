@@ -13,7 +13,7 @@ import numpy as np
 import re
 import nltk
 from sklearn.datasets import load_files
-nltk.download('stopwords')
+#nltk.download('stopwords')
 import pickle
 from nltk.corpus import stopwords
 
@@ -93,7 +93,8 @@ X, y = df['description'], df['is_salary']
 # Back to default code
 def init():
     global model
-    model_path = Model.get_model_path('diabetes-model')
+    # model_path = Model.get_model_path('diabetes-model')
+    model_path = Model.get_model_path('finalized_model.sav')
 
     with open(model_path, 'rb') as file:
         model = pickle.load(file)
